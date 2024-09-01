@@ -31,6 +31,5 @@ test.describe('Amazon Tests', { tag: "@barra-busca" }, () => {
     await test.step('E o campo de busca deve receber o valor selecionado', async () => {
       await barraBusca.verificarSeValorCampoBuscaIgualTexto(produtoBuscado);
     });
-
   });
 });

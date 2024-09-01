@@ -10,14 +10,27 @@ export class BarraBuscaComponentPage {
         this.mapping = new BarraBuscaComponentMapping(page);
     }
 
+    /**
+     * 
+     * @param nomeDoProduto 
+     */
     async inserirTextoNaBarra(nomeDoProduto:string) {
         await this.mapping.inputBarraNavegacao.fill(nomeDoProduto);
     }
 
+    /**
+     * 
+     * @param opcaoDesejada 
+     * @param teclaPressionada 
+     */
     async selecionarSugestaoTeclado(opcaoDesejada:string, teclaPressionada:string) {
         await this.mapping.sugestoes.getByText(opcaoDesejada, { exact: true }).press(teclaPressionada);
     }    
 
+    /**
+     * 
+     * @param textoEsperado 
+     */
     async verificarSeValorCampoBuscaIgualTexto(textoEsperado:string) {
         const textoAtual = await this.mapping.inputBarraNavegacao.inputValue();
         
