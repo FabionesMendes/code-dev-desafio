@@ -1,12 +1,14 @@
-#modo normal(headed)
+# modo normal(headed)
 ``` javascript
-npx playwright test --headed 
+npm run executar "@tag"
 ```
 
-#modo debug
+# modo debug
 ``` javascript
-npx playwright test --headed --debug
+npm run executar:debug "@tag"
 ```
 
-code gen
-https://playwright.dev/docs/codegen-intro#running-codegen
+Exemplo:
+```javascript
+npm run executar:debug "@barra-busca"
+```

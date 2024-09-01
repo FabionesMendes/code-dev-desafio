@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:bytag": "npx playwright test --headed --grep",
-    "test:bytag:debug": "npx playwright test --headed --debug --grep"
+    "executar": "npx playwright test --headed --grep",
+    "executar:debug": "npx playwright test --headed --debug --grep"
   },
   "keywords": [],
   "author": "",
