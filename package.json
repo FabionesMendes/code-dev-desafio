@@ -1,0 +1,17 @@
+{
+  "name": "projeto-amazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:bytag": "npx playwright test --headed --grep",
+    "test:bytag:debug": "npx playwright test --headed --debug --grep"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.1"
+  }
+}
